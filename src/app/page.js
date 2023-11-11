@@ -17,7 +17,7 @@ export default function Home() {
         />
         <div className="flex flex-col w-full lg:w-[52%] p-8 lg:p-8 items-center h-full lg:justify-center lg:items-start">
           <Image
-            src="https://storage.googleapis.com/nofal-profile/myprofile.jpg"
+            src="/assets/myphoto.jpg"
             width="200"
             height="200"
             alt="profile"
