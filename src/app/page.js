@@ -1,20 +1,21 @@
 import Image from "next/image";
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoMailOutline } from "react-icons/io5";
+import style from './index.module.css'
 
 
 
 export default function Home() {
   return (
-    <main className="flex flex-col m-0 bg-zinc-950">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:h-screen h-full">
+    <main className={`${style.index} flex flex-col m-0 bg-zinc-950 lg:h-screen h-full`}>
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-0">
         <Image
-          src="https://storage.googleapis.com/nofal-profile/wallpaper.jpg"
+          src="/assets/wallpaper.jpg"
           width="1080"
           height="1080"
           alt="profile"
-          className="w-screen lg:w-[50%] bg-cover"
+          className="w-screen lg:w-[48%] bg-cover"
         />
-        <div className="flex flex-col w-full lg:w-[50%] p-8 lg:p-0 items-center lg:items-start">
+        <div className="flex flex-col w-full lg:w-[52%] p-8 lg:p-8 items-center h-full lg:justify-center lg:items-start">
           <Image
             src="https://storage.googleapis.com/nofal-profile/myprofile.jpg"
             width="200"
@@ -39,28 +40,28 @@ export default function Home() {
               href="https://instagram.com/mnflrizki"
               className="flex flex-col lg:flex-row transition-all hover:duration-300 bg-zinc-900	rounded-xl hover:bg-sky-800	text-zinc-300 gap-2 items-center p-4"
             >
-              <IoLogoInstagram style={iconStyle} />
+              <IoLogoInstagram size='25'/>
             </a>
 
             <a
               href="https://github.com/naufalr17"
               className="flex flex-col lg:flex-row transition-all hover:duration-300 bg-zinc-900	rounded-xl hover:bg-sky-800	 text-zinc-300 gap-2 items-center p-4"
             >
-              <IoLogoGithub style={iconStyle} />
+              <IoLogoGithub size='25'/>
             </a>
 
             <a
               href="https://www.linkedin.com/in/mnaufalr"
               className="flex flex-col lg:flex-row transition-all hover:duration-300 bg-zinc-900	rounded-xl hover:bg-sky-800	 text-zinc-300 gap-2 items-center p-4"
             >
-              <IoLogoLinkedin style={iconStyle} />
+              <IoLogoLinkedin size='25'/>
             </a>
 
             <a
               href="mailto:mnflrizki@gmail.com"
               className="flex flex-col lg:flex-row transition-all hover:duration-300 bg-zinc-900	rounded-xl hover:bg-sky-800	 text-zinc-300 gap-2 items-center p-4"
             >
-              <IoMailOutline style={iconStyle} />
+              <IoMailOutline size='25'/>
             </a>
           </div>
         </div>
@@ -69,7 +70,7 @@ export default function Home() {
   );
 }
 
-const iconStyle = { fontSize: "25px", fill:'currentColor' };
+// const iconStyle = { fontSize: "25px"};
 
 function Specialsprofile({ paragraph }) {
   return <p className="text-lg lg:text-2xl font-medium">{paragraph} </p>;
