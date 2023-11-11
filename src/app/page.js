@@ -36,7 +36,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col lg:flex-row mt-8 gap-8">
             <a
-              href="https://instagram.com/naufalr17"
+              href="https://instagram.com/mnflrizki"
               className="flex flex-col lg:flex-row transition-all hover:duration-300 bg-zinc-900	rounded-xl hover:bg-sky-800	text-zinc-300 gap-2 items-center p-4"
             >
               <IoLogoInstagram style={iconStyle} />
