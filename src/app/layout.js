@@ -1,4 +1,6 @@
 import { Plus_Jakarta_Sans } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
+
 import './globals.css'
 
 const plusjs = Plus_Jakarta_Sans({ subsets: ['latin'] })
@@ -11,7 +13,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={plusjs.className}>{children}</body>
+      <body className={plusjs.className}>{children}
+      <Analytics/></body>
     </html>
   )
 }
